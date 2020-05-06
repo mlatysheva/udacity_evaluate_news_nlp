@@ -33,9 +33,7 @@ The Aylien API is perhaps different than what you've used before. It has you ins
 
 ### Step 1: Signup for an API key
 First, you will need to go [here](https://developer.aylien.com/signup). Signing up will get you an API key. Don't worry, at the time of this course, the API is free to use up to 1000 requests per day or 333 intensive requests. It is free to check how many requests you have remaining for the day.
-APP ID 4ffec548
-API key 
-8ed2d9ebc469e2b48ea0b4c84d2157e2
+
 Endpoint  https://api.aylien.com/api/v1
 
 
