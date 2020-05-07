@@ -65,13 +65,7 @@ app.post('/text', saveText);
   inputText = req.body;   
   console.log(inputText);  
   
-  console.log('Call external API');
-  textapi.sentiment(inputText, function(error, response) {
-    if (error === null) {
-      console.log(response);
-      result = response;
-    }
-  });
+
   res.send('{\"Status\":\"OK\"}');
 }
 
@@ -80,7 +74,17 @@ app.post('/text', saveText);
 app.get('/sentiment', sendResult);
 
 function sendResult (req, res) {
+  console.log('Call external API');
+  textapi.sentiment(inputText, function(error, response) {
+    if (error === null) {
+      console.log(response);
+      result = response;
+      res.send(result);
+    }
+    else
+    { res.send('{\"Status\":\"Error\"}');}
+  });
   
-	res.send(result);
+	// res.send(result);
 };
 
