@@ -2,29 +2,31 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title>Test</title>
-        <link rel="stylesheet" href="/styles/resets.css">
+        <title>Text sentiment API</title>
+        <!-- <link rel="stylesheet" href="/styles/resets.css">
         <link rel="stylesheet" href="/styles/base.css">
         <link rel="stylesheet" href="/styles/header.css">
         <link rel="stylesheet" href="/styles/form.css">
-        <link rel="stylesheet" href="/styles/footer.css">
+        <link rel="stylesheet" href="/styles/footer.css"> -->
     </head>
 
     <body>
 
         <header>
-            <div class="">
-                Logo
+            <div class="logo">
+                Alyien API
+                <!-- <img src="/images/logo-full.svg" href = "https://aylien.com/"> -->
             </div>
-            <div class="">
+            <div class="nav">
                 navigation
             </div>
         </header>
 
         <main>
             <section>
+                <div>Enter your text in the field below to check if it is nice or not:</div>
                 <form class="" onsubmit="return Client.handleSubmit(event)">
-                    <input id="name" type="text" name="input" value="" onblur="onBlur()" placeholder="Name">
+                    <input id="name" type="text" name="input" value="" placeholder="Enter here the text you want to check sentiment for.">
                     <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
                 </form>
             <section>
@@ -42,7 +44,7 @@
         </main>
 
         <footer>
-            <p>This is a footer</p>
+            <p>The external API is provided by AYLIEN.</p>
         </footer>
         <!-- <script>
             // Check that service workers are supported
