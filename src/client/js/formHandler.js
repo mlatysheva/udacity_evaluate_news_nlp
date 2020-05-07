@@ -55,10 +55,9 @@ const postText = async (url = '', data = {}) => {
       const userData = await response.json();
       //console.log(userData.sentiment);
       document.getElementById('polarity').innerHTML = `The sentiment of this text is: ${userData.polarity}`;
-    //   document.getElementById('date').innerHTML = `Today's date is ${userData[0].date}`;
-    //   document.getElementById('city').innerHTML = `Your city is ${userData[0].city}`;
-    //   document.getElementById('temp').innerHTML = `Today's temperature is ${userData[0].temperature} Celcius`;
-    //   document.getElementById('content').innerHTML = `You feel today ${userData[0].userResponse}.`;
+      document.getElementById('polarity_confidence').innerHTML = `Polarity confidence is: ${userData.polarity_confidence}`;
+      document.getElementById('subjectivity').innerHTML = `Subjectivity is: ${userData.subjectivity}`;      
+      document.getElementById('subjectivity_confidence').innerHTML = `Subjectivity confidence is: ${userData.subjectivity_confidence}`;
   
     } catch (error) {
       console.log('error', error);
