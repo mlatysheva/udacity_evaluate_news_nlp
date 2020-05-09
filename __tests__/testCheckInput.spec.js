@@ -1,9 +1,9 @@
-import { checkInput } from '../src/client/js/inputChecker.js'
-// const checkInput = require('../src/client/js/inputChecker.js');
+import { checkInput } from '../src/client/js/inputChecker'
 
-test('empty string', () =>
-
+test('empty string', () =>{
+const jsdomAlert = window.alert; 
+window.alert = () => {}; 
 { expect(checkInput('')).
-toBeNull
-
+toBeNull}
+window.alert = jsdomAlert; 
 });
