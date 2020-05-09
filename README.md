@@ -17,6 +17,13 @@ Aylien API, which analyses such features of the text as positivity and subjectiv
 The results are sent to the local server, which in turn sends the results to the 
 client API, which are dynamically displayed in the client API.
 
+## Development server and production server
+
+The app is using two modes: development and production.
+The development server runs on port 8080 and when the production server is launched, outputs the results from the 
+external API to the user interface.
+The production server runs on port 8081.
+
 ## Additional features
 
 The project uses SASS for styling and minifies js and styles for the production environment.
